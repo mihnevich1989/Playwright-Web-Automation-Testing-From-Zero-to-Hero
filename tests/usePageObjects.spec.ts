@@ -6,6 +6,10 @@ test.beforeEach(async ({ page }) => {
 })
 
 test('navigate to form page', async ({ page }) => {
-  const navitgateTo = new NavigationPage(page)
-  await navitgateTo.formLayotsPage()
+  const navigateTo = new NavigationPage(page)
+  await navigateTo.formLayotsPage()
+  await navigateTo.datepickerPage()
+  await navigateTo.smartTablePage()
+  await navigateTo.toastrPage()
+  await navigateTo.tooltipPage()
 })
