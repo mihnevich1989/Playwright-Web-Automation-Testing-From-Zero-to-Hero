@@ -20,17 +20,17 @@ export class NavigationPage {
   }
 
   async smartTablePage() {
-    await this.selectGroupMenuItem('Tables & Data').click()
+    await this.selectGroupMenuItem('Tables & Data')
     await this.page.getByText('Smart Table').click()
   }
 
   async toastrPage() {
-    await this.selectGroupMenuItem('Modal & Overlays').click()
+    await this.selectGroupMenuItem('Modal & Overlays')
     await this.page.getByText('Toastr').click()
   }
 
   async tooltipPage() {
-    await this.selectGroupMenuItem('Modal & Overlays').click()
+    await this.selectGroupMenuItem('Modal & Overlays')
     await this.page.getByText('Tooltip').click()
   }
 
